@@ -1,0 +1,62 @@
+.message {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .h4 {
+    margin-bottom: 35px;
+  }
+  
+  @media screen and (max-width: 575px) {
+    .message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .h4 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  
+    .button {
+      width: 160px;
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .h4 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+  
+    .button {
+      width: 150px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .message {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .h4 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  
+    .button {
+      width: 250px;
+    }
+  }

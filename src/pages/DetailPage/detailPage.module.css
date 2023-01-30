@@ -1,0 +1,80 @@
+.wrapper {
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+  }
+  
+  .form {
+    width: 100%;
+  }
+  
+  .thTextAlign {
+    text-align: end;
+  }
+  
+  .p {
+    margin: 0;
+  }
+  
+  .cell1 {
+    word-break: break-word;
+    width: 350px;
+  }
+  
+  .cell2 {
+    word-break: break-word;
+  }
+  
+  .btnWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .btnSave {
+    margin-right: 30px;
+  }
+  
+  @media screen and (max-width: 575px) {
+    .cell1 {
+      width: 150px;
+    }
+  
+    .p {
+      margin: 0;
+      font-weight: 450;
+      line-height: 1.2;
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .cell1 {
+      width: 165px;
+    }
+  
+    .p {
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .cell1 {
+      width: 165px;
+    }
+  
+    .p {
+      margin: 0;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .cell1 {
+      width: 220px;
+    }
+  }

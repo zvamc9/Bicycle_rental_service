@@ -1,0 +1,175 @@
+.img {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .help {
+    color: aquamarine;
+    margin-top: -16px;
+  }
+
+  .text {
+    margin-right: 35px;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    color: blue;
+    transition: color 0.15s ease-in-out;
+    text-decoration: none;
+    background-color: aliceblue;
+  }
+  
+  .btn {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+    font-size: medium;
+    background-color: aquamarine;
+  }
+
+  .btnInf {
+    cursor: pointer;
+    height: 35px;
+    width: 170px;
+    font-size: medium;
+    background-color: aquamarine;
+    margin-top: -5px;
+  }
+  
+  .btnInf:hover {
+    background-color: crimson;
+  }
+   
+  .nav_link {
+    text-decoration: none;
+    color: black;
+  }
+
+
+
+  .nav_item {
+    padding-top: 20px;
+    list-style-type: none;
+   }
+
+   .nav_item {
+    background: linear-gradient(
+      to right, transparent, transparent),
+      linear-gradient(to right,
+      #ff0000, #fff200, #1e9600);
+      background-size: 100% 3px, 0 3px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+  }
+
+   .nav_item:hover {
+      background-size: 0 3px, 100% 3px;
+  }
+
+
+  @media screen and (max-width: 575px) {
+    .img {
+      width: 600px;
+      height: 300px;
+      margin: 0;
+    }
+
+    .text {
+      margin: 0;
+    }
+  
+    .text > h1 {
+      text-align: center;
+    }
+  
+    .paragraph {
+      margin: 0;
+    }
+  
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 576px) and (max-width: 767px) {
+    .img {
+      width: 600px;
+      height: 300px;
+      margin: 0;
+    }
+  
+    .text {
+      margin: 0;
+    }
+  
+    .text > h1 {
+      text-align: center;
+    }
+  
+    .paragraph {
+      margin: 0;
+    }
+  
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .img {
+      width: 800px;
+      height: 400px;
+      margin-top: 20px;
+    }
+  
+    .text {
+      margin: 0;
+    }
+  
+    .text > h1 {
+      text-align: center;
+    }
+  
+    .paragraph {
+      margin: 0;
+    }
+  
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .img {
+      width: 1000px;
+      height: 500px;
+      margin-top: 20px;
+    }
+  
+    .text {
+      margin: 0;
+    }
+  
+    .text > h1 {
+      text-align: center;
+    }
+  
+    .paragraph {
+      margin: 0;
+    }
+  
+    .wrapper {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (min-width: 1400px) {
+    .img {
+      width: 1000px;
+      height: 500px;
+    }
+  }

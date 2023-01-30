@@ -1,0 +1,67 @@
+.button {
+  width: 290px;
+  height: 34px;
+  margin-bottom: 25px;
+  background-color: aliceblue;
+  font-size: initial;
+  color: black;
+  cursor: pointer;
+  }
+
+  .button:hover,.form button:active,.form button:focus {
+    background: aquamarine;
+  }
+
+  .a {
+    font-size: larger;
+    margin-right: 60px;
+    text-decoration: none;
+  }
+  .a {
+    background: linear-gradient(
+      to right, transparent, transparent),
+      linear-gradient(to right,
+      #ff0000, #fff200, #1e9600);
+      background-size: 100% 3px, 0 3px;
+      background-position: 100% 100%, 0 100%;
+      background-repeat: no-repeat;
+      transition: background-size 400ms;
+  }
+
+  a:hover {
+    background-size: 0 3px, 100% 3px;
+  }
+
+  .field {
+    width: 210px;
+    border-color: aquamarine;
+    height: 26px;
+    font-size: initial;
+    margin-bottom: 25px;
+  }
+
+
+  
+  .form {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .form_label {
+    font-size: larger;
+    margin-right: 8px;
+  }
+  
+  
+  @media screen and (min-width: 1400px) {
+    .form {
+      width: 350px;
+    }
+  
+    .button {
+      margin-top: 15px;
+    }
+  }
