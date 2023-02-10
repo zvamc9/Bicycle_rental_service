@@ -1,26 +1,25 @@
-
 .wrapper {
-    padding: 40px 40px;
-    flex-grow: 1;
-    display: flex;
-    justify-content: center;
-    background-image: linear-gradient(to right, #DECBA4, #3E5151);
+  padding: 40px 40px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  background-image: linear-gradient(to right, #decba4, #3e5151);
+}
+
+@media screen and (max-width: 575px) {
+  .wrapper {
+    padding: 45px 35px;
   }
-  
-  @media screen and (max-width: 575px) {
-    .wrapper {
-      padding: 45px 35px;
-    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .wrapper {
+    padding: 30px 35px;
   }
-  
-  @media screen and (min-width: 576px) and (max-width: 767px) {
-    .wrapper {
-      padding: 30px 35px;
-    }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    padding: 70px 50px;
   }
-  
-  @media screen and (min-width: 1400px) {
-    .wrapper {
-      padding: 70px 50px;
-    }
-  }
+}

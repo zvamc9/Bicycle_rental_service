@@ -25,7 +25,7 @@ const ListOfCases = (props) => {
 
   useEffect(() => {
     getAllCases();
-  }, []);
+  }, [getAllCases]);
 
   const handleRowClick = (id, e) => {
     navigate(`/cases/${id}`);
@@ -53,7 +53,7 @@ const ListOfCases = (props) => {
           ) : (
             <div className={"wrapper"}>
               <table className="table table-hover">
-                <thead>
+                <thead className={css.thead}>
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">Лицензионный номер</th>

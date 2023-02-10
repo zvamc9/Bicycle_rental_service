@@ -2,13 +2,13 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  
 }
 
 .modalShown {
-  display: block;
-  backdrop-filter: blur(2px);
-  margin-left: 15px;
+  /* display: block;
+   backdrop-filter: blur(2px); */
+  margin-left: -209px;
+  margin-top: -40px;
 }
 
 .invalidMessage {
@@ -18,24 +18,25 @@
 .wrapper {
   display: flex;
   align-items: center;
-  /* width: 100%; 
-     justify-content: center; */
+  width: 100%;
+  justify-content: center;
+  flex-direction: column;
 }
 
-  /*  .btnBackground {
+/*  .btnBackground {
        background: none;  
        border: none; 
 } */
- 
+
 .navContainer {
   padding: 0 40px;
   margin: 0;
   width: 100%;
-} 
+}
 
 .background {
   background-color: #daddfc;
-} 
+}
 
 .linkItem {
   white-space: normal;

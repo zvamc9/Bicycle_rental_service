@@ -26,7 +26,7 @@ const ListOfOfficers = (props) => {
 
   useEffect(() => {
     getAllOfficers();
-  }, []);
+  }, [getAllOfficers]);
 
   const handleRowClick = (id, e) => {
     navigate(`/officers/${id}`);
@@ -55,17 +55,16 @@ const ListOfOfficers = (props) => {
             <div className="wrapper">
               <table className="table table-hover" id={"listOfOfficersTable"}>
                 <thead>
-                  
                   <tr>
                     <th scope="col">
-                      <img src={employees} icon={"Employee"} />
+                      <img src={employees} alt="Employee" />
                     </th>
-                    
+
                     <th>ФИО</th>
+
                     <th className={css.th3}>E-mail</th>
                     <th className={css.th4}>Одобрен</th>
                   </tr>
-                  
                 </thead>
                 <hr />
                 <tbody>
@@ -106,7 +105,7 @@ const ListOfOfficers = (props) => {
                             <SecondaryButton
                               title={"Удалить"}
                               type={"button"}
-                              className="btn-sm"
+                              className={css.btnDel}
                               onClick={(e) => handleButtonClick(item._id, e)}
                             />
                           </th>

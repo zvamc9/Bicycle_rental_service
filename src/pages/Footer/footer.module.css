@@ -1,35 +1,41 @@
+html,
+body {
+  overflow: hidden;
+}
+
 .icon {
-    background-color: aquamarine;
-    width: 60px;
-    height: 57px;
-    margin-right: 10px;
+  background-color: aquamarine;
+  width: 60px;
+  height: 52px;
+  margin-right: 10px;
 }
 
 .contacts {
-    background-color: aquamarine;
-    height: 40px;
-    margin: 0 auto;
-    padding: 8px 20px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  background-color: aquamarine;
+  height: 35px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
 }
 
 .text {
-    font-size: larger;
-    display: flex;
- }
+  font-size: larger;
+  display: flex;
+}
 
 .brand {
-    display: flex;
-    margin-left: -20px;
-    align-items: center;
-    text-decoration: none;
-    font-size: larger;
-    color: black;
+  display: flex;
+  margin-left: -20px;
+  align-items: center;
+  text-decoration: none;
+  font-size: larger;
+  color: black;
 }
 
 .tel {
-    margin-right: 25px;
+  margin-right: 25px;
 }

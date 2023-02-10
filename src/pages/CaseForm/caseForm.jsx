@@ -32,7 +32,7 @@ const CaseForm = (props) => {
 
   useEffect(() => {
     getAllOfficers();
-  }, []);
+  }, [getAllOfficers]);
 
   const handleClickMessage = () => {
     navigate(`/`);
@@ -96,13 +96,16 @@ const CaseForm = (props) => {
                   <div className={"wrapper"}>
                     <Form className={`row g-3 ${css.form}`}>
                       <div className="col-md-6">
-                        <label htmlFor="licenseNumber" className="form-label">
-                          Лицензионный номер
+                        <label
+                          htmlFor="licenseNumber"
+                          className={css.form_label}
+                        >
+                          Лицензионный номер:
                         </label>
                         <Field
                           type="text"
                           name={"licenseNumber"}
-                          className="form-control "
+                          className={css.form_control}
                           placeholder="Лицензионный номер"
                           id="licenseNumber"
                         />
@@ -114,13 +117,16 @@ const CaseForm = (props) => {
                       </div>
 
                       <div className="col-md-6">
-                        <label htmlFor="ownerFullName" className="form-label">
-                          ФИО владельца
+                        <label
+                          htmlFor="ownerFullName"
+                          className={css.form_label}
+                        >
+                          ФИО владельца:
                         </label>
                         <Field
                           type="text"
                           name={"ownerFullName"}
-                          className="form-control "
+                          className={css.form_control}
                           placeholder="ФИО владельца"
                           id="ownerFullName"
                         />
@@ -132,12 +138,12 @@ const CaseForm = (props) => {
                       </div>
 
                       <div className="col-md-4">
-                        <label htmlFor="type" className="form-label">
-                          Тип
+                        <label htmlFor="type" className={css.form_label}>
+                          Тип:
                         </label>
                         <Field
                           as={"select"}
-                          className="form-select"
+                          className={css.form_select}
                           name={"type"}
                           id="type"
                         >
@@ -162,37 +168,37 @@ const CaseForm = (props) => {
                       </div>
 
                       <div className="col-md-4">
-                        <label htmlFor="color" className="form-label">
-                          Цвет
+                        <label htmlFor="color" className={css.form_label}>
+                          Цвет:
                         </label>
                         <Field
                           type="text"
                           name={"color"}
-                          className="form-control"
+                          className={css.form_control}
                           placeholder="Цвет"
                           id="color"
                         />
                       </div>
 
                       <div className="col-md-4">
-                        <label htmlFor="date" className="form-label">
-                          Дата
+                        <label htmlFor="date" className={css.form_label}>
+                          Дата:
                         </label>
                         <Field
                           type="date"
                           name={"date"}
-                          className="form-control"
+                          className={css.form_control}
                           id="date"
                         />
                       </div>
 
                       <div className="col-md-7">
-                        <label htmlFor="officer" className="form-label">
-                          Сотрудник
+                        <label htmlFor="officer" className={css.form_label}>
+                          Сотрудник:
                         </label>
                         <Field
                           as={"select"}
-                          className="form-select"
+                          className={css.form_select}
                           name={"officer"}
                           id="officer"
                         >
@@ -217,13 +223,16 @@ const CaseForm = (props) => {
                         </Field>
                       </div>
 
-                      <div className="col-12">
-                        <label htmlFor="description" className="form-label">
-                          Описание
+                      <div className={css.col_12}>
+                        <label
+                          htmlFor="description"
+                          className={css.form_label_description}
+                        >
+                          Описание:
                         </label>
                         <Field
                           as={"textarea"}
-                          className="form-control"
+                          className={css.form_description}
                           name={"description"}
                           id="description"
                           placeholder="Опишите велосипед"
@@ -231,9 +240,9 @@ const CaseForm = (props) => {
                       </div>
 
                       <div className="col-12">
-                        <div className="form-check">
+                        <div className={css.form_check}>
                           <Field
-                            className="form-check-input"
+                            className={css.form_check_input}
                             type={"checkbox"}
                             name={"agreement"}
                             id="agreement"
@@ -254,6 +263,7 @@ const CaseForm = (props) => {
 
                       <div className="col-12">
                         <MainButton
+                          className={css.inform}
                           title={"Сообщить о краже"}
                           type={"submit"}
                           disabled={!(formik.isValid && formik.dirty)}

@@ -1,16 +1,16 @@
 .form {
-    /* width: 600px; */
-    display: flex;
-    /* justify-content: center; */
-    flex-direction: column;
-    align-items: end;
-  }
+  /* width: 600px; */
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-items: flex-end;
+}
 
 .form_control {
-   width: 200px;
-   margin-bottom: 20px;
-   height: 20px;
-   border-color: aquamarine;
+  width: 200px;
+  margin-bottom: 20px;
+  height: 20px;
+  border-color: aquamarine;
 }
 
 .form_select {
@@ -37,8 +37,8 @@
   cursor: pointer;
 }
 
-  @media screen and (min-width: 1400px) {
-    .form {
-      width: 900px;
-    }
+@media screen and (min-width: 1400px) {
+  .form {
+    width: 900px;
   }
+}

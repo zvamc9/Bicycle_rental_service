@@ -1,89 +1,97 @@
 .link {
-    color: #212529;
-    text-decoration: none;
-  }
-  
-  .link:hover {
-    color: #0d6efd;
-  }
-  
-  .cell1 {
-    width: 65px;
-    word-break: break-word;
-    padding-top: 15px;
-  }
-  
-  .cell2 {
-    width: 360px;
-    word-break: break-word;
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
-  }
-  
-  .cell3 {
-    width: 220px;
-    word-break: break-word;
-    padding-top: 15px;
-    padding-left: 40px;
-  }
-  
+  color: #212529;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: #0d6efd;
+}
+
+.cell1 {
+  width: 65px;
+  word-break: break-word;
+  padding-top: 15px;
+}
+
+.cell2 {
+  width: 360px;
+  word-break: break-word;
+  display: flex;
+  justify-content: center;
+  padding-top: 15px;
+}
+
+.cell3 {
+  width: 220px;
+  word-break: break-word;
+  padding-top: 15px;
+  padding-left: 40px;
+}
+
+.cell4 {
+  vertical-align: middle;
+  padding-top: 15px;
+}
+
+.cell5 {
+  vertical-align: middle;
+  text-align: center;
+  width: 100px;
+  padding-top: 15px;
+}
+
+.th4 {
+  text-align: center;
+}
+
+.switchInput {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnDel {
+  cursor: pointer;
+  width: 85px;
+}
+.btnDel:hover {
+  background-color: crimson;
+}
+
+@media screen and (max-width: 575px) {
+  .th3,
+  .th4,
+  .cell3,
   .cell4 {
-    vertical-align: middle;
-    padding-top: 15px;
+    display: none;
   }
-  
-  .cell5 {
-    vertical-align: middle;
-    text-align: center;
-    width: 100px;
-    padding-top: 15px;
+  .cell1 {
+    width: 50px;
   }
-  
-  .th4 {
-    text-align: center;
+}
+
+/* @media screen and (min-width: 576px) and (max-width: 767px) {
+  .th3,
+  .th4,
+  .cell3,
+  .cell4 {
+    display: none;
   }
-  
-  .switchInput {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .th3,
+  .cell3 {
+    display: none;
   }
-  
-  @media screen and (max-width: 575px) {
-    .th3,
-    .th4,
-    .cell3,
-    .cell4 {
-      display: none;
-    }
-    .cell1 {
-      width: 50px;
-    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .cell3 {
+    width: 300px;
   }
-  
-  @media screen and (min-width: 576px) and (max-width: 767px) {
-    .th3,
-    .th4,
-    .cell3,
-    .cell4 {
-      display: none;
-    }
-  }
-  
-  @media screen and (min-width: 768px) and (max-width: 991px) {
-    .th3,
-    .cell3 {
-      display: none;
-    }
-  }
-  
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-    .cell3 {
-      width: 300px;
-    }
-  
-    .cell4 {
-      width: 200px;
-    }
-  }
+
+  .cell4 {
+    width: 200px;
+  } 
+} */
