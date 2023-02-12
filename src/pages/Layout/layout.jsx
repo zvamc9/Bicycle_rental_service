@@ -7,7 +7,6 @@ import Footer from "../Footer/footer";
 const Layout = () => {
   return (
     <>
-      
       <div className={css.wrapper}>
         <Outlet />
       </div>

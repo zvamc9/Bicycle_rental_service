@@ -51,7 +51,7 @@ const OfficerDetailPage = (props) => {
 
   useEffect(() => {
     getOneOfficer(id);
-  }, [dispatch, id]);
+  }, [dispatch, getOneOfficer, id]);
 
   const handleClickMessage = () => {
     navigate(`/officers`);

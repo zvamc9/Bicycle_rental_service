@@ -80,11 +80,11 @@ const CaseDetailPage = (props) => {
 
   useEffect(() => {
     getOneCase(id);
-  }, [dispatch, id]);
+  }, [dispatch, getOneCase, id]);
 
   useEffect(() => {
     getAllOfficers();
-  }, []);
+  }, [getAllOfficers]);
 
   const handleClickMessage = () => {
     navigate(`/cases`);
@@ -153,8 +153,6 @@ const CaseDetailPage = (props) => {
                       <table className="table table-hover">
                         <thead>
                           <tr>
-                           
-
                             <th colSpan="2" className={css.thTextAlign}>
                               <p className={css.p}>
                                 Сообщение было создано{" "}
@@ -259,7 +257,7 @@ const CaseDetailPage = (props) => {
                                   type="text"
                                   name={"licenseNumber"}
                                   className="form-control"
-                                  placeholder={"Введите ицензионный номер"}
+                                  placeholder={"Введите лицензионный номер"}
                                   onKeyPress={handleKeyPress}
                                   onClick={(e) => e.stopPropagation()}
                                 />
